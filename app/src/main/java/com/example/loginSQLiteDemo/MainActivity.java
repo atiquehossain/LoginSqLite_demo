@@ -11,6 +11,8 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 import pl.bclogic.pulsator4droid.library.PulsatorLayout;
 
 public class MainActivity extends AppCompatActivity {
@@ -54,9 +56,13 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void btn(View view) {
+        button.setBackgroundColor(Color.rgb(0,128,128));
+
        if(validation()) {
+           button.setText("Success");
 
        }
+        button.setText("SIGN IN");
 
 
     }
